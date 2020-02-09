@@ -9,13 +9,16 @@ public class TriangleUtilitiesTest {
     @Test
     public void testGetRow_ForSmallWidth(){
         //Given
+        // This is the expected output; The output is String variable "*" defined by a int width =1
         String expected = "*";
         int width = 1;
         
         //When
+        //When I call the method that I create(name) it should post my output
         String actual = TriangleUtilities.getRow(width);
         
-        //Then
+        //Then = What I am comparing which is the expected and the actual to get the expected result
+        
         Assert.assertEquals(expected, actual);
     }
     
